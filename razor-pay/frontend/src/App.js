@@ -41,7 +41,7 @@ function App() {
 			amount: data.amount.toString(),
 			order_id: data.id,
 			name: 'Payment',
-			description: 'Thank you for nothing. Please give us some money',
+			description: 'Thank you for perceching. Please pay to us.',
 			image: 'http://localhost:1337/logo.svg',
 			handler: function (response) {
 				alert(response.razorpay_payment_id)
