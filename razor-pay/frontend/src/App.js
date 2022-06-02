@@ -19,7 +19,7 @@ function loadScript(src) {
 const __DEV__ = document.domain === 'localhost'
 
 function App() {
-	const [name, setName] = useState('Mehul')
+	const [name, setName] = useState('khageswar')
 
 	async function displayRazorpay() {
 		const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
