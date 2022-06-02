@@ -19,17 +19,16 @@ app.get('/logo.svg', (req, res) => {
 
 app.post('/verification', (req, res) => {
 	// do a validation
-	const secret = '12345678'
+	const secret = 'Dellinspire@1'
 
 	const crypto = require('crypto')
 
 	const shasum = crypto.createHmac('sha256', secret)
 	shasum.update(JSON.stringify(req.body))
 	const digest = shasum.digest('hex')
-
+		console.log(req.headers['x-razorpay-signature']);
 	if (digest === req.headers['x-razorpay-signature']) {
 		// process it
-		 console.log(digest)
 		require('fs').writeFileSync('payment1.json', JSON.stringify(req.body, null, 4))
 	} else {
 		// pass it

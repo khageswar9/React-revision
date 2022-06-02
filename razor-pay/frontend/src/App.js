@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
 function loadScript(src) {
@@ -61,19 +60,15 @@ function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
+				<h2>checkout page</h2>
+				<button
 					className="App-link"
 					onClick={displayRazorpay}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Donate $5
-				</a>
-				hii
+					Payment
+				</button>
 			</header>
 		</div>
 	)
