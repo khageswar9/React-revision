@@ -1,7 +1,6 @@
 // example code
 function toggler() {
     let arr = Object.values(arguments);
-    // console.log(arr)
     let x = 0;
     return function(){
         console.log(arr[(x++)%arr.length])
