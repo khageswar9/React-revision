@@ -1,0 +1,35 @@
+.topthree{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.first {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+}
+.bodyofenquire{
+    height: 80vh;
+    width: 60%;
+    margin: auto;
+}
+.appbody{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px){
+    .appbody{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

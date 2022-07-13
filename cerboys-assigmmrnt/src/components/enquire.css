@@ -1,0 +1,10 @@
+.headoftable{
+    background-color: rgb(145, 143, 143);
+    height: 20px;
+}
+.contain-table{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+
+}
